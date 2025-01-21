@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>480</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Member</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>480</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Roles</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>480</y>
+      <w>260</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>260</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Article</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>260</y>
+      <w>180</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=1
+m1=1..*
+
+posts</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;120.0;70.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>480</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Permissions</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>480</y>
+      <w>680</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;70.0;260.0;70.0;260.0;10.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>640</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>520</y>
+      <w>220</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=1
+m1=0..*
+
+creates</panel_attributes>
+    <additional_attributes>50.0;80.0;10.0;80.0;10.0;30.0;80.0;30.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>720</x>
+      <y>200</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Version 0.1
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
