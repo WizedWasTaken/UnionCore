@@ -4,123 +4,180 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
-      <y>480</y>
-      <w>200</w>
-      <h>60</h>
+      <x>180</x>
+      <y>280</y>
+      <w>420</w>
+      <h>200</h>
     </coordinates>
-    <panel_attributes>Member</panel_attributes>
+    <panel_attributes>&lt;&lt; Inherits IdentityUser&gt;
+Member
+--
+- fullName: string
+- title: string
+- permissions: List&lt;Permission&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
-      <y>480</y>
-      <w>200</w>
-      <h>60</h>
+      <x>700</x>
+      <y>600</y>
+      <w>480</w>
+      <h>160</h>
     </coordinates>
-    <panel_attributes>Roles</panel_attributes>
+    <panel_attributes>&lt;&lt; Inherits IdentityRole &gt;&gt;
+Role
+--
+- rolePermissions - List&lt;Permission&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>480</y>
-      <w>260</w>
-      <h>80</h>
+      <x>540</x>
+      <y>460</y>
+      <w>200</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m1=1..*
+m1=0..*
 m2=1..*</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;80.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
-      <y>260</y>
-      <w>200</w>
-      <h>60</h>
+      <x>160</x>
+      <y>60</y>
+      <w>280</w>
+      <h>200</h>
     </coordinates>
-    <panel_attributes>Article</panel_attributes>
+    <panel_attributes>Article
+--
+- title: string
+- content: string
+- creator: Member
+- </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>260</y>
+      <x>40</x>
+      <y>60</y>
       <w>180</w>
-      <h>300</h>
+      <h>420</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-m2=1
+    <panel_attributes>m2=1
 m1=1..*
 
 posts</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;10.0;10.0;120.0;70.0;120.0</additional_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;180.0;70.0;180.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1120</x>
-      <y>480</y>
-      <w>200</w>
-      <h>60</h>
+      <y>400</y>
+      <w>300</w>
+      <h>160</h>
     </coordinates>
-    <panel_attributes>Permissions</panel_attributes>
+    <panel_attributes>Permission
+--
+- permissionId: guid
+- name: string
+- description: string</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>480</y>
-      <w>680</w>
-      <h>180</h>
+      <x>580</x>
+      <y>360</y>
+      <w>580</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1..*
 m2=1..*</panel_attributes>
-    <additional_attributes>10.0;30.0;10.0;70.0;260.0;70.0;260.0;10.0;320.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0;100.0;40.0;270.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
-      <y>640</y>
-      <w>200</w>
-      <h>60</h>
+      <x>180</x>
+      <y>680</y>
+      <w>320</w>
+      <h>220</h>
     </coordinates>
-    <panel_attributes>Event</panel_attributes>
+    <panel_attributes>Event
+--
+- name: string
+- description: string
+- startDate: DateTime
+- endDate: DateTime
+- creator: Member</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>520</y>
+      <x>80</x>
+      <y>460</y>
       <w>220</w>
-      <h>220</h>
+      <h>320</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-m2=1
-m1=0..*
-
-creates</panel_attributes>
-    <additional_attributes>50.0;80.0;10.0;80.0;10.0;30.0;80.0;30.0;80.0;10.0</additional_attributes>
+    <panel_attributes>m2=1
+m1=0..*</panel_attributes>
+    <additional_attributes>50.0;130.0;10.0;130.0;10.0;20.0;80.0;20.0;80.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>720</x>
-      <y>200</y>
+      <x>980</x>
+      <y>20</y>
       <w>280</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>Version 0.1
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1120</x>
+      <y>320</y>
+      <w>300</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Enum eller tabel???
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1160</x>
+      <y>540</y>
+      <w>160</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;100.0;40.0;100.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>460</x>
+      <y>40</y>
+      <w>320</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Article has Markdown
+Support
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
