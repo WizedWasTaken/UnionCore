@@ -15,6 +15,7 @@ namespace UnionCore.Entities
     {
         #region Fields
 
+        private Guid memberId;
         private string fullName;
         private string jobTitle;
         private List<Permission> permissions;
@@ -22,6 +23,15 @@ namespace UnionCore.Entities
         #endregion
 
         #region Properties
+
+        /// <summary>
+        /// Gets or sets the member id.
+        /// </summary>
+        public Guid MemberId
+        {
+            get { return memberId; }
+            set { memberId = value; }
+        }
 
         /// <summary>
         /// Gets or sets the full name of the member.
@@ -59,7 +69,8 @@ namespace UnionCore.Entities
         /// </summary>
         public Member()
         {
-            Permissions = new List<Permission>();
+            MemberId = Guid.NewGuid();
+            Permissions = [];
         }
 
         /// <summary>
@@ -71,6 +82,22 @@ namespace UnionCore.Entities
         public Member(string userName, string fullName, string jobTitle)
             : this()
         {
+            MemberId = Guid.NewGuid();
+            UserName = userName;
+            FullName = fullName;
+            JobTitle = jobTitle;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Member"/> class with the specified username, full name, and job title.
+        /// </summary>
+        /// <param name="userName">The username of the member.</param>
+        /// <param name="fullName">The full name of the member.</param>
+        /// <param name="jobTitle">The job title of the member.</param>
+        public Member(Guid memberId, string userName, string fullName, string jobTitle)
+            : this()
+        {
+            MemberId = memberId;
             UserName = userName;
             FullName = fullName;
             JobTitle = jobTitle;

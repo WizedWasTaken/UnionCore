@@ -38,7 +38,7 @@ namespace UnionCore.Entities
         /// </summary>
         public Role()
         {
-            Permissions = new List<Permission>();
+            Permissions = [];
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace UnionCore.Entities
         public Role(string roleName)
             : base(roleName)
         {
-            Permissions = new List<Permission>();
+            Permissions = [];
         }
 
         /// <summary>

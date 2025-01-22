@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionCore.Entities", "UnionCore.Entities\UnionCore.Entities.csproj", "{2CC360B1-0126-4FBD-9318-C51831B03E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionCore.DataAccess", "DataContext\UnionCore.DataAccess.csproj", "{F8CB06B7-A907-49AD-AFFE-8C49D07DF14A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionCore.API", "UnionCore.API\UnionCore.API.csproj", "{9C593098-77EE-4881-B963-8102BCB546E5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CC360B1-0126-4FBD-9318-C51831B03E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC360B1-0126-4FBD-9318-C51831B03E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC360B1-0126-4FBD-9318-C51831B03E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC360B1-0126-4FBD-9318-C51831B03E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CB06B7-A907-49AD-AFFE-8C49D07DF14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CB06B7-A907-49AD-AFFE-8C49D07DF14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CB06B7-A907-49AD-AFFE-8C49D07DF14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CB06B7-A907-49AD-AFFE-8C49D07DF14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C593098-77EE-4881-B963-8102BCB546E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C593098-77EE-4881-B963-8102BCB546E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C593098-77EE-4881-B963-8102BCB546E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C593098-77EE-4881-B963-8102BCB546E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
