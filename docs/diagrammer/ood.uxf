@@ -13,7 +13,7 @@
 Member
 --
 - fullName: string
-- title: string
+- jobTitle: string
 - permissions: List&lt;Permission&gt;</panel_attributes>
     <additional_attributes/>
   </element>
@@ -23,7 +23,7 @@ Member
       <x>700</x>
       <y>600</y>
       <w>480</w>
-      <h>160</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>&lt;&lt; Inherits IdentityRole &gt;&gt;
 Role
@@ -37,12 +37,12 @@ Role
       <x>540</x>
       <y>460</y>
       <w>200</w>
-      <h>320</h>
+      <h>300</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=0..*
 m2=1..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0;80.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0;80.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -54,10 +54,10 @@ m2=1..*</panel_attributes>
     </coordinates>
     <panel_attributes>Article
 --
+- articleId: guid
 - title: string
 - content: string
-- creator: Member
-- </panel_attributes>
+- creator: Member</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -108,10 +108,11 @@ m2=1..*</panel_attributes>
       <x>180</x>
       <y>680</y>
       <w>320</w>
-      <h>220</h>
+      <h>260</h>
     </coordinates>
     <panel_attributes>Event
 --
+- eventId: guid
 - name: string
 - description: string
 - startDate: DateTime
@@ -161,12 +162,12 @@ bg=blue</panel_attributes>
       <x>1160</x>
       <y>540</y>
       <w>160</w>
-      <h>260</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1..*
 m2=1..*</panel_attributes>
-    <additional_attributes>10.0;100.0;40.0;100.0;40.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;40.0;80.0;40.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
